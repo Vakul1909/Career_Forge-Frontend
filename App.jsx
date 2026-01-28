@@ -7,11 +7,11 @@ import ResumeAnalyzer from "./pages/ResumeAnalyzer";
 import MockInterview from "./pages/MockInterview";
 import JobFinder from "./pages/JobFinder";
 import Roadmap from "./pages/Roadmap";
-import Login from "./pages/login";
-import Signup from "./pages/signup";
+import Login from "./pages/Login";
+import Signup from "./pages/Signup";
 import Profile from "./pages/Profile";
-import SavedJobs from "./pages/savedjobs";
-import Dashboard from "./pages/dashboard";
+import SavedJobs from "./pages/SavedJobs";
+import Dashboard from "./pages/Dashboard";
 const App = () => {
   useEffect(() => {
     if (!sessionStorage.getItem("freshStart")) {
