@@ -1,0 +1,432 @@
+.page-container {
+  min-height: 100vh;
+  background: #09090b;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+.home-btn {
+  position: absolute;
+  top: 120px;
+  left: 20px;
+  background: linear-gradient(135deg, #120e5c, #180f81); 
+  color: white;
+  padding: 0.6rem 1.1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  z-index: 9999;
+}
+.jf-btn:hover {
+  background: linear-gradient(135deg, #6366f1, #4f46e5);
+}
+.title {
+  font-size: 2.5rem;
+  color: #818cf8;
+  margin-bottom: 1.5rem;
+}
+.mock-upload-box {
+  width: 100%;
+  max-width: 600px;
+  background: #18181b;
+  padding: 2rem;
+  border-radius: 1rem;
+  min-height: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.section-title {
+  font-weight: bold;
+}
+.input-group {
+  background: #020617;
+  border-radius: 12px;
+  padding: 0.7rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem; 
+}
+.mi-label {
+  background: linear-gradient(135deg, #4f46e5, #4338ca);
+  color: white;
+  font-weight: 700;
+  text-align: center;
+  padding: 8px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+.mi-input {
+  width: 100%;
+  background: #0f172a;
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  font-size: 15px;
+  box-shadow: inset 0 2px 6px rgba(0,0,0,0.6);
+  cursor: pointer;
+}
+.input-group input::placeholder {
+  color: #8a8d98;
+}
+.input-group :hover {
+  border-color: #7a42ff;     
+  background: #020617;   
+}
+.select-row {
+  display:flex;
+  justify-content: center; 
+  margin-bottom: 1rem;      
+  width: 100%;
+}
+.select-group {
+  width: 260px;         
+  max-width: 90%;
+  background: #020617;
+  border-radius: 12px;
+  padding: 0.7rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+.select-group label {
+  background: linear-gradient(135deg, #4f46e5, #4338ca);
+  color: white;
+  font-weight: 700;
+  text-align: center;
+  padding: 8px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+.select-group select {
+  width: 100%;
+  background: #0f172a;
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
+  box-shadow: inset 0 2px 6px rgba(0,0,0,0.6);
+}
+.select-group select:hover {
+  background: #020617;
+}
+.select-group select option {
+  background: #18181b;
+  color: white;
+}
+.input {
+  width: 100%;
+  background: #27272a;
+  padding: 0.7rem;
+  border-radius: 0.5rem;
+  border: none;
+  margin-bottom: 1rem;
+  color: white;
+  resize: none;
+}
+.btn {
+  background: linear-gradient(135deg, #4f46e5, #3730a3);
+  color: white;
+  padding: 0.75rem;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  border: none;
+  font-size: 16px;
+}
+.btn:hover {
+  background: linear-gradient(135deg, #6366f1, #4f46e5);
+}
+.full {
+  width: 100%;
+  height: 48px;
+}
+.chat-box {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.chat-bubble {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 14px 16px;
+  border-radius: 10px;
+  max-width: 100%;
+  font-size: 15px;
+  line-height: 1.5;
+}
+.chat-bubble.bot {
+  background: #1f2933;
+  color: #a5b4fc;
+}
+.chat-bubble.user {
+  background: #0f172a;
+  color: #93c5fd;
+}
+.chat-bubble.feedback {
+  background: #052e16;
+  color: #86efac;
+}
+.chat-bubble span {
+  display: block;
+  white-space: normal;
+  word-break: break-word;
+  line-height: 1.5;
+}
+.instructions {
+  list-style: none;
+  padding-left: 0;
+}
+.instructions li {
+  background: #020617;
+  border-left: 4px solid #818cf8;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  color: #e5e7eb;
+}
+.error-text {
+  color: #ef4444;
+  margin-top: 8px;
+  font-size: 14px;
+}
+.copied-text {
+  color: #22c55e;
+  margin-top: 10px;
+  font-size: 14px;
+}
+.btn.secondary:hover {
+  background: linear-gradient(135deg, #4338ca, #4f46e5);
+}
+.btn-row {
+  display: flex !important;
+  justify-content: flex-start !important;
+  gap: 14px !important;
+}
+.btn-row .btn {
+  flex: none !important;   
+  width: 150px !important;
+  height: 50px !important;
+  padding: 0 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+.btn.primary {
+  flex: none !important;
+  width: 150px !important;
+}
+.btn.primary,
+.btn.secondary,
+.btn.warn {
+  background: linear-gradient(135deg, #4f46e5, #312e81) !important;
+  border: none !important;
+  color: white !important;
+}
+.btn:disabled {
+  opacity: 0.6 !important;
+  cursor: not-allowed !important;
+}
+.review-page {
+  padding: 30px;
+  background: #0f0f1c;
+  border-radius: 14px;
+  max-width: 700px;
+  margin: auto;
+  box-shadow: 0 0 20px rgba(0,0,0,.4);
+}
+.review-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+  color: white;
+  font-size: 15px;
+}
+.instruction-check {
+  margin-top: 14px;
+  font-size: 14px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  color: #ccc;
+}
+.instruction-check input {
+  cursor: pointer;
+}
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.question-box {
+  position: relative;
+  height: 100px !important;    
+  max-height: 100px !important;
+  min-height: 100px !important;
+  overflow-y: auto;
+  display: flex;
+  align-items: center;     
+}
+.question-count {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #9aa9ff;
+  padding: 4px 10px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 700;
+}
+.interview-box {
+  width: 100%;
+  max-width: 900px;
+  min-height: 380px;
+}
+.result-panel {
+  width: 100%;
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 2rem;
+  border-radius: 0.75rem;
+  background: #18181b; 
+  opacity: 0;
+  transform: translateY(40px) scale(0.96);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+.result-panel.show {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+.result-heading {
+  font-size: 24px;
+  color:  #818cf8; 
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+.result-content {
+  white-space: pre-wrap;
+  font-size: 17px;
+  line-height: 1.6;
+  color: #ffffff; 
+  font-family: "Segoe UI", system-ui;
+}
+.result-content strong,
+.result-content b,
+.highlight {
+  color: #818cf8; 
+  font-weight: 600;
+  font-size: 17px;
+}
+.result-content ul {
+  margin: 8px 0 12px 20px;
+}
+.result-content li {
+  margin-bottom: 6px;
+}
+.score {
+  color: #0e0351 !important; 
+  font-weight: bold;
+}
+@media (max-width: 768px) {
+  .page-container {
+    padding: 1rem;
+  }
+  .home-btn {
+    margin-top: 12px;
+    left: 12px;
+    padding: 0.5rem 0.9rem;
+    font-size: 13px;
+  }
+  .title {
+    font-size: 1.6rem;
+    text-align: center;
+    margin-bottom: 0.8rem;
+    margin-top:29px;
+  }
+  .mock-upload-box {
+    padding: 1.4rem;
+    min-height: auto;
+  }
+  .input-group,
+  .select-group {
+    padding: 0.6rem;
+    gap: 0.6rem;
+  }
+  .mi-label,
+  .select-group label {
+    font-size: 13px;
+    padding: 6px;
+  }
+  .mi-input,
+  .select-group select {
+    font-size: 14px;
+    padding: 9px;
+  }
+  .select-row {
+    margin-bottom: 0.8rem;
+  }
+  .btn {
+    font-size: 14px;
+    padding: 0.65rem;
+    height: 44px;
+  }
+  .btn.full {
+    height: 44px;
+  }
+  .btn-row {
+    flex-direction: column !important;
+    gap: 10px !important;
+  }
+  .btn-row .btn,
+  .btn.primary {
+    width: 100% !important;
+    height: 44px !important;
+  }
+  .chat-bubble {
+    font-size: 14px;
+    padding: 12px;
+  }
+  .question-box {
+    height: 90px !important;
+    max-height: 90px !important;
+  }
+  .question-count {
+    font-size: 12px;
+    padding: 3px 8px;
+  }
+  .interview-box {
+    max-width: 100%;
+    min-height: auto;
+  }
+  .result-panel {
+    padding: 1.4rem;
+  }
+  .result-heading {
+    font-size: 20px;
+    text-align: center;
+  }
+  .result-content {
+    font-size: 15px;
+  }
+  .result-content strong,
+  .result-content b {
+    font-size: 15px;
+  }
+  .review-page {
+    padding: 20px;
+  }
+  .review-item {
+    font-size: 14px;
+  }
+  .instructions li {
+    font-size: 14px;
+    padding: 10px;
+  }
+}

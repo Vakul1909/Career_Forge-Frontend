@@ -1,0 +1,29 @@
+.prose pre {
+  white-space: pre-wrap !important;
+  word-break: break-word;
+  overflow-x: auto;
+}
+.prose table {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+}
+.prose {
+  max-width: 100%;
+}
+.app-layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.app-content {
+  flex: 1;
+}
+.footer {
+  text-align: center;
+  padding: 12px;
+  font-size: 14px;
+  color: #9ca3af;
+  border-top: 1px solid #27272a;
+  margin-top: 20px;
+}

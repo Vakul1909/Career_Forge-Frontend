@@ -1,0 +1,247 @@
+.jf-root {
+  min-height: 100vh;
+  background: #0b0b0b;
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+}
+.home-btn {
+  position: absolute; 
+  top: 120px;
+  left: 20px;
+  background: linear-gradient(135deg, #120e5c, #180f81); 
+  color: white;
+  padding: 0.6rem 1.1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  z-index: 9999;
+}
+.jf-btn:hover {
+  background: linear-gradient(135deg, #6366f1, #4f46e5);
+}
+.jf-heading {
+  font-size: 40px;
+  color: #6f8dfd;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.jf-main-box {
+  width: 100%;
+  max-width: 600px;     
+  background: #18181b;
+  padding: 2rem; 
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin: 0 auto;      
+}
+.jf-grid-box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.7rem;         
+  width: 100%;
+}
+.full-width {
+  grid-column: span 2;
+}
+.section-title {
+  font-weight: bold;
+}
+.jf-field {
+  background: #020617;
+  border-radius: 12px;
+  padding: 0.7rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+.jf-label {
+  background: linear-gradient(135deg, #4f46e5, #4338ca);
+  color: white;
+  font-weight: 700;
+  text-align: center;
+  padding: 8px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+.jf-input {
+  width: 100%;
+  background: #0f172a;
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  font-size: 15px;
+  box-shadow: inset 0 2px 6px rgba(0,0,0,0.6);
+  cursor: pointer;
+}
+.jf-input:hover {
+  border-color: #7a42ff;     
+  background: #020617;       
+}
+.jf-btn {
+  background: linear-gradient(135deg, #4f46e5, #3730a3);
+  color: white;
+  padding: 0.85rem;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: bold;
+  border: none;
+  width: 100%;
+}
+.jf-btn:hover {
+  background: linear-gradient(135deg, #6366f1, #4f46e5);
+}
+.jf-results-root {
+  background: #0b0b0b;
+  min-height: 100vh;
+  padding: 20px;
+  color: white;
+}
+.jf-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 380px));
+  gap: 24px;
+  margin-top: 30px;
+}
+.jf-card {
+  padding: 1.2rem;
+  background: #181818;
+  border: 1px solid #333;
+  border-radius: 8px;
+}
+.jf-company,
+.jf-location {
+  opacity: 0.7;
+}
+.jf-apply-btn {
+  margin-top: 20px;
+  padding: 8px 14px;
+  background: linear-gradient(135deg, #4f46e5, #3730a3);
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  margin-right:12px;
+}
+.jf-nojobs-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+}
+.jf-nojobs {
+  font-size: 18px;
+  color: #cbd5f5;
+}
+.jf-save-btn {
+  margin-top: 20px;
+  padding: 8px 14px;
+  background: linear-gradient(135deg, #4f46e5, #3730a3);
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+}
+.jf-save-btn.saved {
+  background: #16a34a;
+}
+.jf-back-bottom {
+  margin: 25px auto 0;        
+  display: block;  
+  background: linear-gradient(135deg, #4f46e5, #3730a3);
+  color: white;
+  padding: 0.85rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: bold;
+  border: none;
+  width: 30%;
+}
+.jf-error {
+  color: #ff4d4f;
+  margin-top: 12px;
+  font-size: 0.9rem;
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 768px) {
+  .jf-root {
+    padding-top: 20px;
+  }
+  .home-btn {
+    top: 90px;
+    left: 12px;
+    padding: 0.5rem 0.9rem;
+    font-size: 14px;
+  }
+  .jf-heading {
+    font-size: 28px;
+    margin-bottom: 16px;
+  }
+  .jf-main-box {
+    padding: 1.5rem;
+    gap: 1.2rem;
+  }
+  .jf-grid-box {
+    grid-template-columns: 1fr;
+  }
+  .full-width {
+    grid-column: span 1;
+  }
+  .jf-field {
+    padding: 0.6rem;
+    gap: 0.6rem;
+  }
+  .jf-label {
+    font-size: 13px;
+    padding: 6px;
+  }
+  .jf-input {
+    font-size: 14px;
+    padding: 9px;
+  }
+  .jf-btn {
+    font-size: 15px;
+    padding: 0.75rem;
+  }
+  .jf-results-root {
+    padding: 16px 12px;
+  }
+  .jf-list {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .jf-card {
+    padding: 1rem;
+  }
+  .jf-company,
+  .jf-location {
+    font-size: 14px;
+  }
+  .jf-apply-btn,
+  .jf-save-btn {
+    width: 100%;
+    margin-top: 12px;
+    margin-right: 0;
+    font-size: 14px;
+  }
+  .jf-back-bottom {
+    width: 100%;
+    font-size: 15px;
+    padding: 0.75rem;
+  }
+  .jf-nojobs {
+    font-size: 16px;
+    text-align: center;
+  }
+  .jf-error {
+    font-size: 13px;
+    text-align: center;
+  }
+}

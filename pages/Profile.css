@@ -1,0 +1,128 @@
+.profile-page {
+  min-height: calc(100vh-120px);
+  background: #0b0b0b;
+  padding-top: 30px;
+  padding-bottom:40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+.profile-page h2 {
+  color: #ffffff;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 3rem;
+}
+.profile-page form {
+  background: #18181b;
+  padding: 20px;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 620px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.sectionlogin-title {
+  font-weight: bold;
+}
+.profile-page input,
+.profile-page select {
+  width: 100%;
+  background: #081024;
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
+}
+.profile-page input:focus,
+.profile-page select:focus {
+  border-color: #6366f1;
+}
+.profile-page input::placeholder {
+  color: #71717a;
+}
+.profile-page input:disabled {
+  color: #9ca3af;
+  cursor: not-allowed;
+}
+.profile-page select option {
+  background: #020617;
+  color: #e5e7eb;
+}
+.profile-page button {
+  background: linear-gradient(135deg, #4f46e5, #3730a3);
+  color: white;
+  padding: 0.85rem;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: bold;
+  border: none;
+  width: 50%;
+  display: block;
+  margin: 1.5rem auto;
+}
+.profile-page button:hover {
+  background: linear-gradient(135deg, #6366f1, #4f46e5);
+}
+.jf-error {
+  color: #ff4d4f;
+  margin-top: 12px;
+  font-size: 0.9rem;
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 768px) {
+  .profile-page {
+    padding-top: 16px;
+    padding-bottom: 24px;
+  }
+  .profile-page h2 {
+    font-size: 22px;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  .profile-page form {
+    padding: 16px;
+    border-radius: 14px;
+    width: 94%;
+  }
+  .profile-page input,
+  .profile-page select {
+    font-size: 14px;
+    padding: 9px;
+  }
+  .profile-page button {
+    width: 100%;
+    font-size: 15px;
+    padding: 0.75rem;
+    margin-top: 1rem;
+  }
+  .sectionlogin-title {
+    font-size: 14px;
+  }
+  .jf-error {
+    font-size: 13px;
+    margin-top: 10px;
+    text-align: center;
+  }
+}
+@media (max-width: 480px) {
+  .profile-page h2 {
+    font-size: 20px;
+  }
+  .profile-page form {
+    padding: 14px;
+  }
+  .profile-page input,
+  .profile-page select {
+    font-size: 13px;
+    padding: 8px;
+  }
+  .profile-page button {
+    font-size: 14px;
+  }
+}

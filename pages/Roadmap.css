@@ -1,0 +1,345 @@
+.roadmap-root {
+  min-height: 100vh;
+  background: #09090b;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+.roadmap-root .home-btn {
+  position: absolute;
+  top: 120px;
+  left: 20px;
+  background: linear-gradient(135deg, #120e5c, #180f81); 
+  color: white;
+  padding: 0.6rem 1.1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  z-index: 9999;
+}
+.roadmap-root .home-btn:hover {
+   background: linear-gradient(135deg, #6366f1, #4f46e5);
+}
+.roadmap-root .title {
+  font-size: 2.5rem;
+  color: #818cf8;
+  margin-bottom: 1.5rem;
+}
+.roadmap-box {
+  width: 100%;
+  max-width: 600px;
+  background: #18181b;
+  padding: 2rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.section-title {
+  font-weight: bold;
+}
+.input-group {
+  background: #020617;
+  border-radius: 12px;
+  padding: 0.7rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  margin-top: 0.2rem; 
+  margin-bottom: 1rem;
+}
+.rm-label {
+  background: linear-gradient(135deg, #4f46e5, #4338ca);
+  color: white;
+  font-weight: 700;
+  text-align: center;
+  padding: 8px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+.rm-input {
+  width: 100%;
+  background: #0f172a;
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  font-size: 15px;
+  box-shadow: inset 0 2px 6px rgba(0,0,0,0.6);
+  cursor: pointer;
+}
+.input-group input::placeholder {
+  color: #8a8d98;
+}
+.input-group :hover {
+  border-color: #7a42ff;     
+  background: #020617;   
+}
+.roadmap-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 1rem;
+  margin-bottom: 1.5rem;      
+  width: 100%;
+}
+.select-card {
+   background: #020617;
+  border-radius: 12px;
+  padding: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 120px;
+}
+.select-label {
+ display: block;
+  width: 100%;
+  background: linear-gradient(135deg, #4f46e5, #4338ca);
+  color: white;
+  font-weight: 700;
+  text-align: center;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+.select-card select {
+  width: 100%;
+  background: #0f172a;
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
+  box-shadow: inset 0 2px 6px rgba(0,0,0,0.6);
+}
+.select-card select:hover {
+  background: #020617;
+}
+.select-card select option {
+  background: #18181b;
+  color: white;
+}
+.error-text {
+  text-align: center;
+  color: #f87171;
+  margin-bottom: 20px;
+}
+.generate-btn {
+  width: 100%;
+  background: linear-gradient(135deg, #4f46e5, #3730a3);
+  color: white;
+  padding: 0.75rem;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  border: none;
+  font-size: 16px;
+}
+.generate-btn:hover {
+  background: linear-gradient(135deg, #6366f1, #4f46e5);
+}
+.roadmap-result {
+  max-width: 1200px;
+  margin: auto;
+}
+.roadmap-heading {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #818cf8;
+  margin-bottom: 1.5rem;
+}
+.roadmap-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(280px, 1fr));
+  gap: 25px;
+}
+.roadmap-card {
+  background: #020617;
+  padding: 24px;
+  border-radius: 20px;
+}
+.roadmap-card h3 {
+  color: #93c5fd;
+  margin-bottom: 10px;
+}
+.roadmap-card ul {
+  padding-left: 20px;
+  margin: 10px 0;
+}
+.roadmap-card li {
+  font-size: 0.9rem;
+  color: #e5e7eb;
+}
+.outcome {
+  margin-top: 10px;
+  color: #a5b4fc;
+  font-weight: 600;
+}
+.roadmap-graph {
+  margin-top: 80px;
+}
+.timeline {
+  display: flex;
+  gap: 40px;
+  overflow-x: auto;
+  padding: 30px;
+}
+.timeline-item {
+  min-width: 240px;
+  text-align: center;
+  position: relative;
+}
+.timeline-dot {
+  width: 44px;
+  height: 44px;
+  background: linear-gradient(135deg, #312e81, #4f46e5);
+  color: white;
+  border-radius: 50%;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  z-index: 2;
+}
+.timeline-line {
+  position: absolute;
+  top: 22px;
+  left: 60%;
+  width: 100%;
+  height: 4px;
+  background: #1e3a8a;
+  z-index: 1;
+}
+.timeline-content {
+  margin-top: 20px;
+  background: #020617;
+  padding: 16px;
+  border-radius: 18px;
+}
+.timeline-content h3 {
+  color: #93c5fd;
+  margin-bottom: 6px;
+}
+.back-btn {
+ margin: 25px auto 0;        
+  display: block;  
+  background: linear-gradient(135deg, #4f46e5, #3730a3);
+  color: white;
+  padding: 0.75rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  width: 30%;
+}
+.back-btn:hover {
+  background: linear-gradient(135deg, #6366f1, #4f46e5);
+}
+@media (max-width: 768px) {
+  .roadmap-root {
+    padding: 1.2rem;
+  }
+  .roadmap-root .home-btn {
+    position: static;
+    margin-bottom: 14px;
+    align-self: flex-start;
+    font-size: 14px;
+    padding: 0.5rem 1rem;
+  }
+  .roadmap-root .title,
+  .roadmap-heading {
+    font-size: 1.9rem;
+    text-align: center;
+  }
+  .roadmap-box {
+    padding: 1.4rem;
+    border-radius: 14px;
+  }
+  .rm-label,
+  .select-label {
+    font-size: 13px;
+    padding: 8px;
+  }
+  .rm-input,
+  .select-card select {
+    font-size: 14px;
+    padding: 9px;
+  }
+  .roadmap-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+  .select-card {
+    min-height: auto;
+  }
+  .generate-btn {
+    font-size: 15px;
+    padding: 0.7rem;
+  }
+  .roadmap-list {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+  .roadmap-card {
+    padding: 18px;
+    border-radius: 16px;
+  }
+  .roadmap-card h3 {
+    font-size: 16px;
+  }
+  .roadmap-card li {
+    font-size: 0.85rem;
+  }
+  .outcome {
+    font-size: 14px;
+  }
+  .timeline {
+    gap: 20px;
+    padding: 20px 10px;
+  }
+  .timeline-item {
+    min-width: 210px;
+  }
+  .timeline-dot {
+    width: 36px;
+    height: 36px;
+    font-size: 14px;
+  }
+  .timeline-line {
+    top: 18px;
+  }
+  .timeline-content {
+    padding: 14px;
+    border-radius: 14px;
+  }
+  .timeline-content h3 {
+    font-size: 15px;
+  }
+  .back-btn {
+    width: 100%;
+    font-size: 15px;
+    padding: 0.7rem;
+  }
+}
+@media (max-width: 480px) {
+  .roadmap-root .title,
+  .roadmap-heading {
+    font-size: 1.6rem;
+  }
+  .rm-input,
+  .select-card select {
+    font-size: 13px;
+  }
+  .timeline-item {
+    min-width: 190px;
+  }
+  .timeline-content {
+    padding: 12px;
+  }
+}
