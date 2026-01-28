@@ -1,17 +1,17 @@
 import React, { useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
-import Home from "./pages/Home";
-import ResumeAnalyzer from "./pages/ResumeAnalyzer";
-import MockInterview from "./pages/MockInterview";
-import JobFinder from "./pages/JobFinder";
-import Roadmap from "./pages/Roadmap";
-import Login from "./pages/Login";
-import Signup from "./pages/Signup";
-import Profile from "./pages/Profile";
-import SavedJobs from "./pages/SavedJobs";
-import Dashboard from "./pages/Dashboard";
+import Navbar from "/src/components/Navbar";
+import Footer from "/src/components/Footer";
+import Home from "/src/pages/Home";
+import ResumeAnalyzer from "/src/pages/ResumeAnalyzer";
+import MockInterview from "/src/pages/MockInterview";
+import JobFinder from "/src/pages/JobFinder";
+import Roadmap from "/src/pages/Roadmap";
+import Login from "/src/pages/Login";
+import Signup from "/src/pages/Signup";
+import Profile from "/src/pages/Profile";
+import SavedJobs from "/src/pages/SavedJobs";
+import Dashboard from "/src/pages/Dashboard";
 const App = () => {
   useEffect(() => {
     if (!sessionStorage.getItem("freshStart")) {
