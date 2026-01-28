@@ -46,7 +46,7 @@ const MockInterview = () => {
     setLoading(true);
     try {
       const res = await fetch(
-        `${import.meta.env.VITE_API_BASE_URL}/api/ai/mock-interview`,
+        `${import.meta.env.VITE_BACKEND_URL}/api/ai/mock-interview`,
         {
           method: "POST",
           headers: {
@@ -150,7 +150,7 @@ const MockInterview = () => {
         })),
       };
       await fetch(
-        `${import.meta.env.VITE_API_BASE_URL}/api/users/mock-interviews`,
+        `${import.meta.env.VITE_BACKEND_URL}/api/users/mock-interviews`,
         {
           method: "POST",
           headers: {
@@ -170,7 +170,7 @@ const MockInterview = () => {
       const token = localStorage.getItem("token");
 
       const res = await fetch(
-        `${import.meta.env.VITE_API_BASE_URL}/api/ai/mock-evaluate`,
+        `${import.meta.env.VITE_BACKEND_URL}/api/ai/mock-evaluate`,
         {
           method: "POST",
           headers: {
