@@ -3,7 +3,7 @@ import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, CartesianGri
 import { useNavigate } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 import API from "../utils/api";
-import "./dashboard.css";
+import "./Dashboard.css";
 export default function Dashboard() {
   const navigate = useNavigate();
   const [data, setData] = useState(null);
