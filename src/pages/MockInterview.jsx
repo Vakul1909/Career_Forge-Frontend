@@ -40,7 +40,7 @@ const MockInterview = () => {
     }
     const token = localStorage.getItem("token");
     if (!token) {
-      showError("Please login again.");
+      showError("Please login First.");
       return;
     }
     setLoading(true);

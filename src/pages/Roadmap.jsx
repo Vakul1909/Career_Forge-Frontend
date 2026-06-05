@@ -53,7 +53,7 @@ export default function Roadmap() {
       });
     } catch (err) {
       console.error(err);
-      showError("Failed to generate roadmap.");
+      showError("Please Login First.");
     }
     setLoading(false);
   };

@@ -96,7 +96,7 @@ ${resumeText}
       await API.post("/api/users/resume", formData);
     } catch (err) {
       console.error(err);
-      setError("Failed to analyze resume");
+      setError("Please Login First.");
     }
     setLoading(false);
   };

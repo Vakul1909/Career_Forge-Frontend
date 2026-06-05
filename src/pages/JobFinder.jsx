@@ -56,7 +56,7 @@ export default function JobFinder() {
       setShowResults(true);
     } catch (err) {
       console.error(err);
-      setError("Failed to fetch jobs");
+      setError("Please Login First.");
     }
     setLoading(false);
   };
