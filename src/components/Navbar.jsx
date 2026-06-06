@@ -72,21 +72,21 @@ const Navbar = () => {
               {open && (
                 <div className="absolute right-0 mt-4 w-52 bg-zinc-800 rounded-xl shadow-xl overflow-hidden z-50">
                   <div
-                    className="flex items-center gap-2 px-4 py-3 hover:bg-zinc-700 cursor-pointer"
+                    className="flex items-center gap-2 px-4 py-3 hover:bg-zinc-700 cursor-pointer text-white"
                     onClick={() => navigate("/profile")}
                   >
                     <UserCircle size={18} />
                     Profile
                   </div>
                   <div
-                    className="flex items-center gap-2 px-4 py-3 hover:bg-zinc-700 cursor-pointer"
+                    className="flex items-center gap-2 px-4 py-3 hover:bg-zinc-700 cursor-pointer text-white"
                     onClick={() => navigate("/dashboard")}
                   >
                     <LayoutDashboard size={18} />
                     Dashboard
                   </div>
                   <div
-                    className="flex items-center gap-2 px-4 py-3 hover:bg-zinc-700 cursor-pointer"
+                    className="flex items-center gap-2 px-4 py-3 hover:bg-zinc-700 cursor-pointer text-white"
                     onClick={() => navigate("/Savedjobs")}
                   >
                     <Bookmark size={18} />

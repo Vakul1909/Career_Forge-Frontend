@@ -330,10 +330,6 @@ button:disabled {
 .result-content li {
   margin-bottom: 6px;
 }
-.score {
-  color: #0e0351 !important; 
-  font-weight: bold;
-}
 @media (max-width: 768px) {
   .page-container {
     padding: 1rem;

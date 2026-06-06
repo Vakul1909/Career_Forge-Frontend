@@ -24,6 +24,7 @@
 }
 .resume-date .date{
   font-size:17px;
+  color:white;
 }
 .top-cards {
   display: grid;
@@ -32,10 +33,9 @@
   margin: 24px 0;
 }
 .info-card {
-  background: rgb(44, 38, 38);
+  background: rgb(41, 41, 45);
   border-radius: 14px;
   padding: 20px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
 }
 .resume-analysis h2 {
   margin-bottom: 20px;
@@ -46,8 +46,7 @@
   flex: 1;
   padding: 18px;
   border-radius: 12px;
-  background: rgba(255,255,255,0.04);
-  border: 1px solid rgba(255,255,255,0.08);
+  color:white;
 }
 .resume-card .file {
   font-size: 28px;
@@ -113,6 +112,7 @@
 .analysis-section ul {
   list-style: none;
   padding-left: 0;
+  color:white;
 }
 .analysis-section li {
   padding: 8px 0;
@@ -170,14 +170,14 @@ background: linear-gradient(135deg, #4f46e5, #3730a3);}
   background: #dc2626;
 }
 .interview-card {
-  background: rgb(44, 38, 38);
+  background: rgb(41, 41, 45);
   border-radius: 14px;
   padding: 20px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
 }
 .interview-card .role {
   font-weight: 600;
   font-size: 18px;
+  color:white;
 }
 .interview-card .difficulty {
   font-size: 15px;
@@ -185,11 +185,13 @@ background: linear-gradient(135deg, #4f46e5, #3730a3);}
 }
 .interview-card .date {
   font-size: 13px;
+  color:white;
 }
 .interview-card .score {
   margin-top: 8px;
   font-size: 16px;
   font-weight: 700; 
+  color:white;
 }
 .interview-detail {
   margin-top: 18px;  
@@ -269,6 +271,7 @@ font-size:16px;
 .progress-text {
   font-size: 17px;
   margin-bottom: 6px;
+  color:white;
 }
 .progress-bar {
   height: 8px;
@@ -287,7 +290,7 @@ font-size:16px;
   gap: 16px;
 }
 .phase-card {
-  background: rgb(44, 38, 38);
+  background: rgb(41, 41, 45);
   padding: 16px;
   border-radius: 14px;
 }
@@ -295,14 +298,17 @@ font-size:16px;
   display: flex;
   gap: 10px;
   align-items: center;
+  color:white;
 }
 .phase-duration {
   font-size: 13px;
   opacity: 0.8;
+  color:white;
 }
 .phase-skills {
   margin-top: 8px;
   padding-left: 18px;
+  color:white;
 }
 .locked {
   opacity: 0.5;
